@@ -89,67 +89,67 @@ end
 -- Create a laucher widget and a main menu
 
 accmenu = {
-	{ "calculator",		"gcalctool"				},
-	{ "gedit",			"gedit"					},
-	{ "gvim",			"gvim"					},
-	{ "nautilus",		"nautilus"				},
-	{ "pcmanfm",		"pcmanfm"				},
-	{ "ranger",		terminal .. "-e ranger"		},
-	{ "spacefm",		"spacefm"				}
+	{ "calculator",	"gcalctool"		},
+	{ "gedit",	"gedit"			},
+	{ "gvim",	"gvim"			},
+	{ "nautilus",	"nautilus"		},
+	{ "pcmanfm",	"pcmanfm"		},
+	{ "ranger",	terminal .. "-e ranger"	},
+	{ "spacefm",	"spacefm"		}
 }
 
 gamesmenu = {
 	{ "cave story plus",	"cave-story-plus" 	},
-	{ "gens/gs",			"gens"				},
-	{ "pcsx",				"pcsx"				},
-	{ "scummvm",			"scummvm"			},
-	{ "snes9x",				"snes9x-gtk"		},
-	{ "vba-m",				"gvbam"				}
+	{ "gens/gs",		"gens"			},
+	{ "pcsx",		"pcsx"			},
+	{ "scummvm",		"scummvm"		},
+	{ "snes9x",		"snes9x-gtk"		},
+	{ "vba-m",		"gvbam"			}
 }
 
 graphicsmenu = {
-	{ "gimp", 				"gimp"				},
-	{ "eye of gnome",		"eog"				}
+	{ "gimp", 		"gimp"	},
+	{ "eye of gnome",	"eog"	}
 }
 
 internetmenu = {
-	{ "chromium",		"chromium" 				},
-	{ "dropbox",		"dropboxd"				},
-	{ "filezilla",		"filezilla"				},
+	{ "chromium",		"chromium" 		},
+	{ "dropbox",		"dropboxd"		},
+	{ "filezilla",		"filezilla"		},
 	{ "rtorrent",	terminal .. "-e rtorrent"	},
-	{ "transmission", 	"transmission"			}
+	{ "transmission", 	"transmission"		}
 }
 
 mediamenu = {
-	{ "audacious",			"audacious"			},
-	{ "brasero",			"brasero"			},
-	{ "cheese",				"cheese"			},
-	{ "pitivi",				"pitivi"			},
-	{ "vlc",				"vlc"				}
+	{ "audacious",	"audacious"			},
+	{ "brasero",	"brasero"			},
+	{ "cheese",	"cheese"			},
+	{ "pitivi",	"pitivi"			},
+	{ "vlc",	"vlc"				}
 }
 
 officemenu = {
-	{ "base",			"libreoffice --base"	},
-	{ "calc",			"libreoffice --calc"	},
+	{ "base",		"libreoffice --base"	},
+	{ "calc",		"libreoffice --calc"	},
 	{ "impress",		"libreoffice --impress"	},
-	{ "libreoffice",	"libreoffice"			},
-	{ "writer",			"libreoffice --writer"	}
+	{ "libreoffice",	"libreoffice"		},
+	{ "writer",		"libreoffice --writer"	}
 }
 
 progmenu = {
-	{ "cmake gui",		"cmake-gui"		},
-	{ "eclipse",		"eclipse"		},
-	{ "geany",			"geany"			},
-	{ "meld",			"meld"			},
-	{ "netbeans",		"netbeans"		},
-	{ "xemacs",			"xemacs"		}
+	{ "cmake gui",	"cmake-gui"		},
+	{ "eclipse",	"eclipse"		},
+	{ "geany",	"geany"			},
+	{ "meld",	"meld"			},
+	{ "netbeans",	"netbeans"		},
+	{ "xemacs",	"xemacs"		}
 }
 
 settingsmenu = {
-	{ "dconf",		"	dconf-editor"			},
+	{ "dconf",		"dconf-editor"			},
 	{ "gdm3 setup",		"gdm3setup.py"			},
 	{ "lxappearance",	"lxappearance"			},
-	{ "system monitor",	"gnome-system-monitor"	}
+	{ "system monitor",	"gnome-system-monitor"		}
 }
 
 	
