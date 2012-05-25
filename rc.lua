@@ -75,8 +75,8 @@ layouts =
 -- {{{ Tags
 -- Define a tag table which hold all screen tags.
 tags = {
-     names = {"main", "chrome", "game", "video", "term", "office"},
-     layout = { layouts[1], layouts[2], layouts[2], layouts[10], layouts[6], layouts[2]}
+     names = {"main", "chrome", "game", "term", "word"},
+     layout = { layouts[1], layouts[2], layouts[2], layouts[6], layouts[2]}
        }
 
 for s = 1, screen.count() do
@@ -94,7 +94,7 @@ accmenu = {
 	{ "gvim",	"gvim"			},
 	{ "nautilus",	"nautilus"		},
 	{ "pcmanfm",	"pcmanfm"		},
-	{ "ranger",	terminal .. "-e ranger"	},
+	{ "ranger",	"urxvt -e /usr/bin/ranger"	},
 	{ "spacefm",	"spacefm"		}
 }
 
@@ -216,12 +216,14 @@ batwidget = widget({ type = "textbox" })
 weatherwidget = widget({ type = "textbox" })
 	vicious.register(weatherwidget, vicious.widgets.weather,
 	function (widget, args)
-		if args["{tempc}"] == "N/A" then
-			return ""
+		if not args["{weather}"] == "N/A" then
+			return "" .. colbgre .. " weather " .. coldef .. colwhi .. string.lower(args["{weather}"]) .. ", " .. args["{tempf}"] .. "°F" .. coldef .. " "
 		else
 			return "" .. colbgre .. " weather " .. coldef .. colwhi .. string.lower(args["{sky}"]) .. ", " .. args["{tempf}"] .. "°F" .. coldef .. " "
 		end
 	end, 1200, "KCMH" )
+	
+	--KCMH
 
 --Wifi Widget
 --wifiwidget = widget({ type = "textbox" })
@@ -551,3 +553,4 @@ client.add_signal("unfocus", function(c) c.border_color = beautiful.border_norma
 -- }}}
 
 --awful.util.spawn_with_shell("compton -cCGfF -o 0.38 -O 200 -I 200 -t 0.02 -l 0.02 -r 3.2 -D2")
+awful.util.spawn_with_shell("compton -cCG -o 0.75 -t 0.01 -l 0.01 -r 2.5")
